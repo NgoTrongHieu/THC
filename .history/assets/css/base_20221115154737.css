@@ -1,0 +1,85 @@
+:root{
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color: #333;
+    --primary-color:#ff8f2f;
+    --price-color:#ff7300;
+    --header-top-height: 66px;
+    --header-navbar-height: 58px;
+    --bgimg:linear-gradient(to bottom , #ebac23 , #e69429);
+    --search-btn-bgimg:linear-gradient(to right bottom , #eb8f16 20%, #c45b2a 80%);
+    --item-cate-height: 52px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /* font-size: 62.5%; */
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+}
+
+.btn{
+    border-color: 2px solid var(--primary-color);
+}
+
+.f-1{
+    flex: 1;
+}
+
+@keyframes authHover{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+@keyframes menuHover{
+    from{
+        visibility: hidden;
+        transform: scale(0);
+    }
+    to{
+        visibility: visible;
+        transform: scale(1);
+    }
+}
+@keyframes itemWrapHover {
+    from{
+        transform: translateX(10%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes rotate {
+    from {
+        transform: rotatey(0);
+
+    }to{
+        transform: rotatey(360deg);
+    }
+}
+@keyframes slide {
+    0% {
+        background-position: 0 0;
+    }100%{
+        background-position: -500% 0;
+
+    }
+}
+@keyframes socialHover{
+    from{
+        width: 18%;
+        transform: scale(0);
+    }to{
+        width: 100%;
+        transform: scale(1);
+    }
+}
+
